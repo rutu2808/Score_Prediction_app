@@ -16,7 +16,7 @@ def plot():
     plt.ylabel("Percentage Score")
     plt.title("Hours studied Vs Scores")
     plt.savefig('static/scatter_plot.png')
-plot()
+# plot()
 
 # splitting data into training and testing sets using Scikit-Learn's built-in train_test_split() method
 from sklearn.model_selection import train_test_split
@@ -60,10 +60,9 @@ def reg_line():
     plt.tight_layout()
     plt.title("Hours studied  Vs Percentage score with regression line")
     plt.savefig('static/regression1.png')
-reg_line()
+# reg_line()
 
 # making prediction using the number of hours provided
-
 def predicts(h):
 
     filename = 'model_lr.pkl'
