@@ -50,7 +50,6 @@ train_model()
 
 # Plotting the regression line
 def reg_line():
-
     filename = 'model_lr.pkl'
     with open(filename, 'rb') as file:
         model = pickle.load(file)
