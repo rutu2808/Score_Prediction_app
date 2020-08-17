@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+    {% block website %}
+
+        <div class="row" style="margin-top: 60px">
+            <div class="col-md-6"></div>
+            <div class="col-md-5">
+                <h2>{{msg}}</h2>
+                <h3>Predicted score for {{hour}} hours of study is <span>{{scores}}</span></h3>
+                <br>
+                <h4>Comparison between the predicted score and your goal</h4>
+            </div>
+
+            <div class="row" style="margin-top: 60px">
+                <div class="col-md-6"></div>
+                    <div class="col-md-2">
+
+                        <img src="static/{{filename}}" alt="" height="300px" width="400px">
+
+                    </div>
+            </div>
+            
+        </div>
+
+    {% endblock website %}
